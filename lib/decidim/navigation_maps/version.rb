@@ -3,7 +3,7 @@
 module Decidim
   # This holds the decidim-meetings version.
   module NavigationMaps
-    VERSION = "1.7.0"
-    DECIDIM_VERSION = [">= 0.30", "< 0.31"].freeze
+    VERSION = "1.8.0"
+    DECIDIM_VERSION = [">= 0.31", "< 0.32"].freeze
   end
 end
