@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 
 ruby RUBY_VERSION
-DECIDIM_VERSION = "0.30.0"
+DECIDIM_VERSION = "0.31.0"
 
 gem "decidim", DECIDIM_VERSION
 
@@ -18,6 +18,7 @@ gem "faker"
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
   gem "decidim-dev", DECIDIM_VERSION
+  gem "decidim-initiatives", DECIDIM_VERSION
 end
 
 group :development do
