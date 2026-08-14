@@ -55,7 +55,7 @@ module Decidim::NavigationMaps::Admin
         it "is parsed correctly" do
           post(:create, params:)
           expect(response).to have_http_status(:success)
-          expect(controller.params[:blueprints]["1"][:blueprint]).to eq("x" => 0.1, "y" => 0.2)
+          expect(controller.params[:blueprints]["1"][:blueprint].to_unsafe_h).to eq("x" => 0.1, "y" => 0.2)
         end
       end
       # context "when blueprint is incorrect" do
